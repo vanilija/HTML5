@@ -1,2 +1,1 @@
-
-Ovaj github cu koristiti za ucenje web tehnologija.
+#HTML5 & CSS learning while using github.
