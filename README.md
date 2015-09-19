@@ -1,2 +1,2 @@
-# hello-world
-Ja bih da testiram samo :)
+
+Ovaj github cu koristiti za ucenje web tehnologija.
