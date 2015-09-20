@@ -9,6 +9,7 @@ h1 {
 
 nav {
     background-color: #808080;
+    width: 1885px;
 }
 
 h2{
@@ -21,11 +22,17 @@ h3{
     margin-left:  20px;
 }
 
-header{
+/**/header{
     
+    background: Goldenrod;
+        
+}
+/*footer{
     background-color: Goldenrod;
 }
-footer{
+*/
+
+input{
     background-color: Goldenrod;
 }
 
