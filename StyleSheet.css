@@ -38,7 +38,8 @@ button {
 }
 input{
     background-color: Aqua;
-    box-shadow: ;
+    box-shadow: red;
+        
 }
 
 /*.button {
