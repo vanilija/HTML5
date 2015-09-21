@@ -45,8 +45,9 @@ p {
 
 img{
     float: right;
-    margin: 0px 0px 10px 10px
-    box-shadow:3px 3px 5px 1px #cccccc;
+    margin: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 5px 1px #cccccc;
+    
 }
 
 hgroup {
