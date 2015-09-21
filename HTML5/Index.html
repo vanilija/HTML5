@@ -125,15 +125,15 @@ mit.edu<br>
 
 <p>They are *mostly* the same, in so much that a web page will look mostly the same regardless of which web browser it is loaded into.  However it is the differences between them that most people discuss because it provides design challenges.</p>
 
-What do I mean when I use the terms "parse" and "render"?  
+<h2>What do I mean when I use the terms "parse" and "render"?</h2>  
 
 <p>The term "parse" refers to the process of breaking apart the HTML document to better "understand" the instructions coded there in.  During this phase, other resources, like external CSS files or JavaScript files, or images, must be requested so that the browser can get a complete picture of the code it is responsible for ultimately rendering.  After all those external resources are downloaded and analyzed, they are typically loaded into the computer's memory as a tree, or hierarchy, of software objects then passed to the rendering engine component of the browser - more about that in a moment.  When I refer to these hierarchical software objects, I simply mean that some objects "own" or are parents to other objects ... a simple example might be that a paragraph is a parent to each sentence, which is a parent to each word.  There might be other tags and graphical elements that the paragraph owns as well.  This is simply part of the process of deciding what technique the browser will use to ultimately render the HTML to the screen.</p>
 
-<b>Characteristics of HTML5 Web Pages</b>
+<h2>Characteristics of HTML5 Web Pages</h2>
 
 <p>Each web page should declare which standard it has promised to adhere to.  This is called a DOCTYPE, and it is the reason that we typed this:<br>
 <br>
-<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 <br>
 <br>
 ... at the very top of our web page.  This instruction told any web browser that may open it that it should be evaluated as an HTML5 document, as opposed to an HTML document of another version.  Every instruction should adhere to the HTML5 specification (which we'll talk about in a moment).  If it doesn't, the renderer may not know how to properly apply the rules of HTML5 to the document and must drop back into something called "quirks mode" where the browser will take a best guess on how to best render the web page.  "Quirks mode" exists because there are plenty of poorly coded HTML page in the world and the web browser wants to try to the best of its ability to render something to the end user.  If web browsers through up their hands and complained each time a web developer wrote bad code, the World Wide Web experience would be dreadful.  Since writing HTML that doesn't validate against a standard can produce inconsistent results, web developers are strongly encouraged to take great care in the code they write.  In fact, most tools that allow you to write HTML pages incorporate a validator to ensure the code you write validates against your chosen HTML specification.  We'll use an HTML5 validator that's available on the internet for free in just a moment.</p>
