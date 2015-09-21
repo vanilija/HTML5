@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>HTML5 vjezba</title>
-        <link rel="stylesheet" type="text/css" href="../CSS3/Stylesheet.css"
-              media="screen">
-    </head>
-        <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 and CSS3 Fundamentals</title>
+  <link rel="stylesheet" type="text/css" href="../CSS3/Stylesheet.css" media="screen">
+</head>
+<body>
 
 <header>
 
-    <hgroup>
-        <h1>Channel9</h1>
+  <hgroup>
+    <h1>Channel9</h1>
+    <h2>HTML5 and CSS3 Fundamentals</h2>
+  </hgroup>
 
-        <h2>HTML5 and CSS3 Fundamentals</h2>
-    </hgroup>
-
-    <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
 </header>
+
 <section>
+
 <article>
 
-<h2>Background Every Web Developer Needs to Know</h2>
+<h1>Background Every Web Developer Needs to Know</h1>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 
 <p>In this article I'll describe the World Wide Web from a high level perspective, focusing on how a web page is request and delivered from a web server to a web browser.  Then, I want to talk about web browsers, how they interpret the HTML you write, differences between browsers, what are standards and to paraphrase the old joke "if Standards are so great, why are there so many of them?"  Finally, I'll talk about the thought process behind HTML5 and CSS3, why they were introduced and what they hope to achieve.</p>
 
 <h2>A Brief Technical Overview of the World Wide Web</h2>
 
-<p>The World Wide Web started out as a means for sharing scientific resources like research documentation between governmental and academic institutions.  It took time for the technologies and practices to evolve beyond its original purpose.</p> 
+<p>The World Wide Web started out as a means for sharing scientific resources like research documentation between governmental and academic institutions.  It took time for the technologies and practices to evolve beyond its original purpose.</p>
 
 <p>From a technical perspective, the World Wide Web is comprised of several technologies ... first, it involves a simple markup (the Hyper-text Markup Language, or HTML) to both structure and format textual information.  When first introduced its claim to fame was the hyperlink which allowed the publisher of a document to add a link to other research papers available from  across the world, creating a virtual web of information (thus, the name).  Second, one or more interlinked pages are published to a server that is connected to an open network which we know today as the Internet.</p> 
 
-<p>A protocol was devised that specialized in allowing a request/response-style communication between two computers.  In other words, one user requests a document by typing an address for a document into a special program called a web browser, and the web browser packages up that request and sends it out into the network.  The request takes the form of a specially formatted packet of data.  You can think of this packet of information like a self-addressed stamped envelope -- containing both the address of the information requested and the address where that information should be sent back to.  This specially formatted packet is known as Hyper-text Transfer Protocol, or rather, HTTP, and for simplicity's sake you can think of it merely as an electronic envelope.  See Figure 1 for the types of information sent in the HTTP Request and HTTP Response messages.</p> 
-     
+</p>A protocol was devised that specialized in allowing a request/response-style communication between two computers.  In other words, one user requests a document by typing an address for a document into a special program called a web browser, and the web browser packages up that request and sends it out into the network.  The request takes the form of a specially formatted packet of data.  You can think of this packet of information like a self-addressed stamped envelope -- containing both the address of the information requested and the address where that information should be sent back to.  This specially formatted packet is known as Hyper-text Transfer Protocol, or rather, HTTP, and for simplicity's sake you can think of it merely as an electronic envelope.  See Figure 1 for the types of information sent in the HTTP Request and HTTP Response messages.</p>
+
 <figure>
   <img src="http-message.gif" alt="A diagram of the parts of an HTTP Message">
   <figcaption>Figure 1. The HTTP Request and Response messages contains important information that allows communication back and forth between the client and the server.</figcaption>
@@ -58,18 +57,14 @@
 
 <p>Once the requested document is delivered through the network back to requestor, that document is loaded into the web browser.  The browser parses through the HTML and decides how to render (or rather, display) its content and appearance on the computer screen.</p>
 
-<h3>What Are Domain Names?</h3>
+<h3>What Are Domain Names?</h3>  
 
 <p>The request that users type into web browsers originally looked something like this:<br>
 <br>
-    
-
 http://157.123.23.44/index.htm</p>
 
 <p>Why the series of numbers?  Each computer on this network was assigned an address, called an Internet Protocol Address, or IP Address.  This was assigned through a lower-level protocol called Transmission Control Protocol / Internet Protocol, or rather, TCP/IP.  It was the foundational technology that allowed requests to be routed to the appropriate server that contained a given resource, or rather, web page.  However, because the IP address for a computer would change occasionally for a given computer or institution, they devised a system called the Domain Name System, or rather, the DNS, to turn a friendly name like:<br>
-<br>
-mit.edu<br>
-<br>
+<br>mit.edu<br><br>
 ... into the actual "location", like:<br>
 <br>
 18.72.0.3</p>
@@ -108,6 +103,7 @@ mit.edu<br>
 </article>
 
 <hr>
+
 <article>
 <h1>How Web Browsers Parse HTML</h1>
 
@@ -127,7 +123,7 @@ mit.edu<br>
 
 <p>They are *mostly* the same, in so much that a web page will look mostly the same regardless of which web browser it is loaded into.  However it is the differences between them that most people discuss because it provides design challenges.</p>
 
-<h2>What do I mean when I use the terms "parse" and "render"?</h2>  
+<h2>What do I mean when I use the terms "parse" and "render"?</h2>
 
 <p>The term "parse" refers to the process of breaking apart the HTML document to better "understand" the instructions coded there in.  During this phase, other resources, like external CSS files or JavaScript files, or images, must be requested so that the browser can get a complete picture of the code it is responsible for ultimately rendering.  After all those external resources are downloaded and analyzed, they are typically loaded into the computer's memory as a tree, or hierarchy, of software objects then passed to the rendering engine component of the browser - more about that in a moment.  When I refer to these hierarchical software objects, I simply mean that some objects "own" or are parents to other objects ... a simple example might be that a paragraph is a parent to each sentence, which is a parent to each word.  There might be other tags and graphical elements that the paragraph owns as well.  This is simply part of the process of deciding what technique the browser will use to ultimately render the HTML to the screen.</p>
 
@@ -156,24 +152,23 @@ mit.edu<br>
 
 <aside>If you have a captive audience, the experience is a little different.  For example, In Windows 8, HTML5 developers can rely on Internet Explorer 10's expanded HTML5 support to build user interfaces that run as Metro-style applications utilizing the WinRT API.  In this case, you know for a fact where your HTML5 will be rendered and by whom, and you are free to use the full set of HTML5 features IE10 supports without having to worry about other browser vendors and version.  Another example might be that someday you're building web-based intranet applications that will run inside of your enterprise on an Intranet.  In this case, your IT department may have standardized on a specific web browser.  If this is the case, you are free to use the HTML features supported by that specific vendor and version of web browser.</aside>
 
-
 <h2>Conclusion</h2>
-
 
 <p>Hopefully you can see the issues surrounding HTML5 and CSS3 with regards to their support by various versions and vendors of web browsers and two different thought processes on how to incorporate HTML5 into your own work.</p>
 </article>
 </section>
+
 <footer>
 
 <small>Copyright © 2012-2014 Bob Tabor</small>
 
-        <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
 </footer>
 </body>
