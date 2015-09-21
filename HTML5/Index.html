@@ -39,17 +39,20 @@
 
 <p>From a technical perspective, the World Wide Web is comprised of several technologies ... first, it involves a simple markup (the Hyper-text Markup Language, or HTML) to both structure and format textual information.  When first introduced its claim to fame was the hyperlink which allowed the publisher of a document to add a link to other research papers available from  across the world, creating a virtual web of information (thus, the name).  Second, one or more interlinked pages are published to a server that is connected to an open network which we know today as the Internet.</p> 
 
-<p>A protocol was devised that specialized in allowing a request/response-style communication between two computers.  In other words, one user requests a document by typing an address for a document into a special program called a web browser, and the web browser packages up that request and sends it out into the network.  The request takes the form of a specially formatted packet of data.  You can think of this packet of information like a self-addressed stamped envelope -- containing both the address of the information requested and the address where that information should be sent back to.  This specially formatted packet is known as Hyper-text Transfer Protocol, or rather, HTTP, and for simplicity's sake you can think of it merely as an electronic envelope.  See Figure 1 for the types of information sent in the HTTP Request and HTTP Response messages.</p>  
-
-http-message.gif
-A diagram of the parts of an HTTP Message
-Figure 1. The HTTP Request and Response messages contains important information that allows communication back and forth between the client and the server.
+<p>A protocol was devised that specialized in allowing a request/response-style communication between two computers.  In other words, one user requests a document by typing an address for a document into a special program called a web browser, and the web browser packages up that request and sends it out into the network.  The request takes the form of a specially formatted packet of data.  You can think of this packet of information like a self-addressed stamped envelope -- containing both the address of the information requested and the address where that information should be sent back to.  This specially formatted packet is known as Hyper-text Transfer Protocol, or rather, HTTP, and for simplicity's sake you can think of it merely as an electronic envelope.  See Figure 1 for the types of information sent in the HTTP Request and HTTP Response messages.</p> 
+     
+<figure>
+  <img src="http-message.gif" alt="A diagram of the parts of an HTTP Message">
+<figcaption>Figure 1. The HTTP Request and Response messages contains important information that allows communication back and forth between the client and the server.</figcaption>
+</figure>
 
 <p>The HTTP request message is routed through a series of network wires and routers (i.e., devices that know how to forward HTTP messages closer to their destination) spanning the globe using (ideally) the shortest route possible until it arrives at its destination, the web server at the address the requestor typed into the web browser.  The web server responds to the request by locating the requested document or resource (in the figure, the index.html file), packaging it up using the same HTTP style envelope, then sending the requested document back on to the network.  The connection would only take a fraction of a second and once the computer served up the request, it would not retain any information about that request in its memory.  See Figure 2 for a diagram of interactivity between the client and server computers.</p>  
 
-www-diagram.gif
-A diagram of route from the user request to the web server and back again
-Figure 2. (1) The HTTP Request is (2) routed across the internet to the (3) server which serves the (4) requested file back in the body of an HTTP Response message. (5) The HTTP Response is routed across the internet to the original requestor.  (6) The requested file is parsed and displayed in the user's web browser.
+<figure>
+  <img src="www-diagram.gif" alt="A diagram of route from the user request to the web server and back again">
+<figcaption>Figure 2. (1) The HTTP Request is (2) routed across the internet to the (3) server which serves the (4) requested file back in the body of an HTTP Response message. (5) The HTTP Response is routed across the internet to the original requestor.  (6) The requested file is parsed and displayed in the user's web browser.
+</figcaption>
+</figure>
 
 <p>Once the requested document is delivered through the network back to requestor, that document is loaded into the web browser.  The browser parses through the HTML and decides how to render (or rather, display) its content and appearance on the computer screen.</p>
 
