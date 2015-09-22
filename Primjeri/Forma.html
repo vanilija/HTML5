@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+          <link rel="stylesheet" type="text/css" href="../CSS3/Stylesheet.css" media="screen">
+    </head>
+    <body>
+  <header>
+  <h1>Online narudzba pizze</h1>
+<nav>
+  <hr>
+<ul>
+  <li><a href="http://anelcolo.azurewebsites.net">Home</a></li>
+</ul>
+</nav>
+
+</header>      
+
+
+<section>
+    
+<form method="POST" action="form.aspx" >
+
+<p>
+  <label>Vase Ime <input type="text" id="Ime" name="Ime" maxlength="10"></label>
+</p>
+
+
+<fieldset>
+
+  <legend>Odaberite velicinu Pizze</legend>
+    <p><label><input type="radio" name="size" value="small"> Mala (10 cm)
+  </label></p>
+    <p><label><input type="radio" name="size" value="medium" checked> Velika (12 cm)
+  </label></p>
+    <p><label><input type="radio" name="size" value="large"> Srednja (14 cm)
+  </label></p>
+
+</fieldset>
+
+<fieldset>
+  <legend>Sta zelite da se nalazi na Pizzi?</legend>
+    <p><label><input type="checkbox" name="toppings" value="bacon">Sudzuka</label></p>
+    <p><label><input type="checkbox" name="toppings" value="cheese">Dodatni sir</label></p>
+    <p><label><input type="checkbox" name="toppings" value="Onion" checked>Luk</label></p>
+    <p><label><input type="checkbox" name="toppings" value="Mushroom">Gljive</label></p>
+    <p><label><input type="checkbox" name="toppings" value="Mushroom">Kecap</label></p>
+    <p><label><input type="checkbox" name="toppings" value="Mushroom">Salama</label></p>
+
+</fieldset>
+
+<p>Kora
+<select name="crust">
+    <option value="c1">Mala</option>
+    <option value="c2" selected>Srednja</option>
+    <option value="c3">Velika</option>
+</select>
+</p>
+
+<p><label>Instrukcije za dostavu hrane:
+<textarea name="comments" cols="50" rows="5" maxlength="1000">
+</textarea>
+</label>
+</p>
+
+<p><input type="submit" value="Nastavi na korak 2"></p>
+<p><input type="reset" value="Vrati se na pocetak"></p>
+
+
+</form>
+
+
+
+
+
+</section>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="http://anelcolo.azurewebsites.net">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="http://anelcolo.azurewebsites.net/HTML5/Primjeri.html">Primjeri</a></li>
+    </ul>
+    <hr>
+  </nav>
+</footer>
+</body>
+</html>
