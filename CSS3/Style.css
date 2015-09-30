@@ -1,0 +1,31 @@
+body {
+    
+    /*Primjer jednostavnog Stylesheet-a
+    Ovo je komentar.*/
+    
+    /*CSS Selektori*/
+    /*Tags -- h1 {}*/
+    /*ID -- #firstParagraph {}*/
+    /*Class -- .importantMessage {}*/
+    
+    }
+
+    /*h1 styling primjer*/
+h1 {
+    font-family: 'Segoe UI';
+    color:  lightblue;
+    font-size: 50px;
+    padding-top: 350px;
+   
+    }
+
+input {
+    font-size: 16px;
+}
+
+footer {
+    font-family: 'Segoe UI';
+    color: blue;
+    padding-top: 300px;
+     
+}
