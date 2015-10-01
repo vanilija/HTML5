@@ -8,24 +8,32 @@ body {
     /*ID -- #firstParagraph {}*/
     /*Class -- .importantMessage {}*/
     
+    background-image: 
+        url(https://epistemologicalgap.files.wordpress.com/2015/01/drones.jpg);
+    background-position: center;
+    background-size: cover;
     }
 
     /*h1 styling primjer*/
 h1 {
-    font-family: 'Segoe UI';
+    font-family: Verdana;
     color:  lightblue;
-    font-size: 50px;
-    padding-top: 350px;
+    font-size: 150px;
+    font-style: normal;
+    padding-top: 100px;
+    text-shadow: 2px 2px 2px black;
    
     }
 
 input {
-    font-size: 16px;
+    font-size: 35px;
+    border-color: white;
 }
 
 footer {
     font-family: 'Segoe UI';
-    color: blue;
+    color: white;
     padding-top: 300px;
+    
      
 }
