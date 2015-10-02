@@ -11,9 +11,22 @@ body {
     background-image: 
         url(https://epistemologicalgap.files.wordpress.com/2015/01/drones.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     }
+header
 
+{
+    /*width: 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    */
+    
+    
+}
     /*h1 styling primjer*/
 h1 {
     font-family: Verdana;
@@ -31,9 +44,14 @@ input {
 }
 
 footer {
+    
     font-family: 'Segoe UI';
     color: white;
-    padding-top: 300px;
+    padding-bottom: 300px;
+    /*margin-left: auto;
+    margin-right: auto;
+    */
+    
     
      
 }

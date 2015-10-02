@@ -1,5 +1,9 @@
 body {
-    background-color: DimGrey;
+    /*background-color: DimGrey;*/
+      background-image: 
+        url(https://epistemologicalgap.files.wordpress.com/2015/01/drones.jpg);
+    background-position: center;
+    background-size: auto;
 }
 
 h1 {
